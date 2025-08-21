@@ -46,6 +46,5 @@ Visit `http://localhost:3000` to view the site.
 
 ## 🎯 Next Steps
 - Add more interactive animations and UI polish
-- Expand projects section with detailed case studies
-- Implement blog functionality
+- Expand projects section
 - Enhance AI/ML-powered features
