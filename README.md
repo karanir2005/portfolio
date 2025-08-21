@@ -31,7 +31,7 @@ This personal portfolio website was built to showcase my skills, projects, and e
 
 Run the following commands on terminal:
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/karanir2005/portfolio
 ```
 ```bash
 cd portfolio
