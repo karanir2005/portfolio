@@ -33,8 +33,14 @@ The website highlights my interests in **AI/ML, Cybersecurity, and Cloud Computi
 Clone the repo:
 ```bash
 git clone https://github.com/yourusername/portfolio.git
+```
+```bash
 cd portfolio
+```
+```bash
 npm install
+```
+```bash
 npm run dev
 ```
 Visit `http://localhost:3000` to view the site.
