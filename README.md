@@ -1,7 +1,6 @@
 # 🚀 Personal Portfolio Website
 
-This personal portfolio website was built to showcase my skills, projects, and experiences as a software engineering student.  
-The website highlights my interests in **AI/ML, Cybersecurity, and Cloud Computing**, while also showcasing my full-stack development skills.  
+This personal portfolio website was built to showcase my skills, projects, and experiences as a software engineering student. The website highlights my interests in **AI/ML, Cybersecurity, and Cloud Computing**, while also showcasing my full-stack development skills.  
 
 🌐 **Live Site:** [rushilkarani.vercel.app]  
 
@@ -30,7 +29,7 @@ The website highlights my interests in **AI/ML, Cybersecurity, and Cloud Computi
 
 ## ▶️ Getting Started
 
-Clone the repo:
+Run the following commands on terminal:
 ```bash
 git clone https://github.com/yourusername/portfolio.git
 ```
