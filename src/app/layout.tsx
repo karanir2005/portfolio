@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import Navbar from "@/components/Navbar";
+import { ThemeProvider } from "@/context/ThemeProvider";
 
 export const metadata = {
   title: "Rushil | Portfolio",
@@ -9,9 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-gray-950 text-white">
-        <Navbar />
-        {children}
+      <body>
+        <ThemeProvider>
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

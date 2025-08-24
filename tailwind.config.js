@@ -1,11 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}", // all JS/TS files in src folder
-    "./public/index.html"          // in case you use static HTML
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./public/index.html"
   ],
+  darkMode: 'class',
   theme: {
-    extend: {}, // you can add custom colors, fonts, spacing later
+    extend: {
+      colors: {
+        background: 'rgb(var(--background))',
+        foreground: 'rgb(var(--foreground))',
+        primary: 'rgb(var(--primary))',
+        secondary: 'rgb(var(--secondary))',
+        accent: 'rgb(var(--accent))',
+      },
+    },
   },
-  plugins: [],  // you can add Tailwind plugins here if needed
+  plugins: [],
 };
