@@ -1,7 +1,7 @@
 "use client";
 
 import { Sun, Moon } from "lucide-react";
-import { motion } from "framer-motion";
+//import { motion } from "framer-motion";
 import { useTheme } from "@/context/ThemeProvider";
 
 export default function Navbar() {
