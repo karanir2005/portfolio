@@ -2,7 +2,7 @@
 
 This personal portfolio website was built to showcase my skills, projects, and experiences as a software engineering student. The website highlights my interests in **AI/ML, Cybersecurity, and Cloud Computing**, while also showcasing my full-stack development skills.  
 
-🌐 **Live Site:** [rushilkarani.vercel.app](rushilkarani.vercel.app)  
+🌐 **Live Site:** [rushilkarani.vercel.app](https://rushilkarani.vercel.app/)
 
 ---
 
