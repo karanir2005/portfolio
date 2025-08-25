@@ -21,8 +21,10 @@ export default function Hero() {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % phrases.length);
     }, 3000);
+
     return () => clearInterval(interval);
-  }, []);
+  }, [phrases.length]);
+
 
   return (
     <section
@@ -39,7 +41,8 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Hi, I'm Rushil
+          Hi, I&apos;m Rushil
+
         </motion.h1>
 
         <motion.p
