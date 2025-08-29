@@ -100,6 +100,10 @@ export default function Hero() {
           </a>
         </motion.div>
       </div>
+      {/* Background credit text */}
+      <p className="absolute bottom-4 right-4 text-xs text-gray-400 opacity-70">
+        Background inspired by Neural Networks
+      </p>
     </section>
   );
 }
