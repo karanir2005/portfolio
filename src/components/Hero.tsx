@@ -41,7 +41,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Hi, I&apos;m Rushil
+          Rushil Karani
 
         </motion.h1>
 
@@ -58,6 +58,9 @@ export default function Hero() {
         <motion.p
           className={`mt-3 text-xl md:text-2xl max-w-2xl text-center transition-colors duration-500 
           ${theme === "dark" ? "text-gray-300" : "text-gray-700"}`}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
         >
           Passionate about{" "}
           <AnimatePresence mode="wait">
@@ -81,7 +84,7 @@ export default function Hero() {
           transition={{ delay: 0.6, duration: 0.8 }}
         >
           <a
-            href="#projects"
+            href="/projects"
             className={`px-6 py-3 rounded-xl border font-semibold transition-colors duration-500
             ${theme === "dark"
               ? "text-white hover:bg-cyan-300/70"

@@ -1,51 +1,59 @@
 "use client";
-
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Github, FileDown, Copy } from "lucide-react";
+import { Copy, Linkedin, Github, FileText } from "lucide-react";
+import { useTheme } from "@/context/ThemeProvider";
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);
+  const { theme } = useTheme();
   const email = "rushil.karani@gmail.com";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(email);
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000); // reset after 2s
+    setTimeout(() => setCopied(false), 2000);
   };
+
+  const buttonClasses =
+    "flex items-center gap-2 px-6 py-3 rounded-xl font-medium shadow-md transition transform hover:scale-105 active:scale-95";
 
   return (
     <section
       id="contact"
-      className="min-h-screen flex flex-col items-center justify-center px-6 py-20 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800"
+      className={`min-h-screen flex flex-col items-center justify-center px-6 py-20 transition-colors duration-500
+        ${theme === "dark"
+          ? "bg-gray-900 text-gray-200"
+          : "bg-white text-gray-800"}`}
     >
       <motion.h2
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl font-bold text-center mb-6 text-gray-900 dark:text-white"
+        viewport={{ once: true }}
+        className="text-4xl font-bold text-center mb-6 text-cyan-500"
       >
         Let&apos;s Get in Touch!
       </motion.h2>
 
       <motion.p
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-3xl mb-10"
+        viewport={{ once: true }}
+        className="text-lg text-center max-w-3xl mb-10"
       >
-        Whether you want to collaborate, discuss opportunities, or just say hi, feel free to reach out!
+        Whether you want to collaborate, discuss opportunities, or just say hi, I&apos;d love to hear from you!
       </motion.p>
 
       <div className="flex gap-6 flex-wrap justify-center">
         {/* Copy Email */}
         <button
           onClick={handleCopy}
-          className=" min-w-[255px] flex items-center gap-2 px-6 py-3 rounded-xl font-medium shadow-md
-          bg-cyan-500 text-white hover:bg-cyan-600 transition"
+          className={`${buttonClasses} min-w-[255px] bg-cyan-500 text-white hover:bg-cyan-600`}
         >
           <Copy size={20} />
-          {copied ? "Copied!" : "rushil.karani@gmail.com"}
+          {copied ? "Copied!" : email}
         </button>
 
         {/* LinkedIn */}
@@ -53,8 +61,7 @@ export default function Contact() {
           href="https://www.linkedin.com/in/rushil-karani/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-6 py-3 rounded-xl font-medium shadow-md
-          bg-blue-600 text-white hover:bg-blue-700 transition"
+          className={`${buttonClasses} bg-blue-600 text-white hover:bg-blue-700`}
         >
           <Linkedin size={20} />
           LinkedIn
@@ -65,8 +72,7 @@ export default function Contact() {
           href="https://github.com/karanir2005/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-6 py-3 rounded-xl font-medium shadow-md
-          bg-gray-800 text-white hover:bg-gray-900 transition"
+          className={`${buttonClasses} bg-gray-800 text-white hover:bg-gray-900`}
         >
           <Github size={20} />
           GitHub
@@ -74,14 +80,13 @@ export default function Contact() {
 
         {/* Resume */}
         <a
-          href="/Rushil_Karani_Resume.pdf"
-          download
-          className="flex items-center gap-2 px-6 py-3 rounded-xl font-medium shadow-md
-          bg-green-600 text-white hover:bg-green-700 transition"
+          href="/resume"
+          className={`${buttonClasses} bg-green-600 text-white hover:bg-green-700`}
         >
-          <FileDown size={20} />
-          Download Resume
+          <FileText size={20} />
+          Resume
         </a>
+
       </div>
     </section>
   );

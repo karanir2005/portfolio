@@ -43,16 +43,16 @@ export default function About() {
           </h2>
           <p className="text-lg leading-relaxed mb-4">
             Hi, I&apos;m Rushil 👋 an aspiring <span className="font-semibold text-cyan-400">Software Engineer </span> 
-            with a strong interest in <span className="font-semibold">AI/ML</span>, 
-            <span className="font-semibold"> Cybersecurity</span>, and 
-            <span className="font-semibold"> Cloud Technologies</span>.  
+            with a strong interest in <span className="font-semibold text-cyan-400">AI/ML</span>, 
+            <span className="font-semibold text-cyan-400"> Cybersecurity</span>, and 
+            <span className="font-semibold text-cyan-400"> Cloud Technologies</span>.  
           </p>
           <p className="text-lg leading-relaxed mb-4">
-            I&apos;m currently pursuing my degree in Software Engineering @ McMaster University, and aiming to secure a software engineering internship for Winter 2026. 
-            My long-term goal is to grow into a role at a <span className="font-semibold">MAANG+</span> company, where I can build innovative and secure technologies at scale.
+            I&apos;m currently pursuing my degree in Software Engineering @ <span className="font-semibold text-cyan-400">McMaster University </span>, and aiming to secure a software engineering internship for Winter 2026. 
+            My long-term goal is to grow into a role at a <span className="font-semibold text-cyan-400">MAANG+</span> company, where I can build innovative and secure technologies at scale.
           </p>
           <p className="text-lg leading-relaxed">
-            Outside of tech, I enjoy exploring new hobbies, running maratho learning about finance & investing, and sharing ideas that push me to grow.
+            Outside of tech, I enjoy exploring new hobbies, running marathons, learning about finance & investing, and sharing ideas that push me to grow.
           </p>
         </motion.div>
       </div>

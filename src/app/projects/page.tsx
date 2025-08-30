@@ -1,13 +1,12 @@
 "use client";
-import ProjectCard from "./ProjectCard";
-import Link from "next/link";
-import { motion } from "framer-motion";
+
+import ProjectCard from "@/components/ProjectCard";
 import { useTheme } from "@/context/ThemeProvider";
 
-export default function Projects() {
+export default function ProjectsPage() {
   const { theme } = useTheme();
 
-  const highlightProjects = [
+  const allProjects = [
     {
       title: "HealthConnect",
       description:
@@ -29,45 +28,51 @@ export default function Projects() {
       tech: ["C", "Bash", "Git", "Terminal"],
       link: "https://github.com/Sam-Scott-McMaster/the-team-assignment-team-33-press-alt-f4",
     },
+    {
+      title: "ScholarSync",
+      description:
+        "Organizer app to help students log notes, set reminders, track tasks, and calculate GPA, boosting productivity by 30%.",
+      tech: ["Java", "Vaadin"],
+      link: "",
+    },
+    {
+      title: "Coming Up - FinTech Dashboard",
+      description:
+        "A full-stack dashboard for visualizing financial transactions and analytics.",
+      tech: ["Next.js", "MongoDB", "Express", "Chart.js"],
+      link: "",
+    },
+    {
+      title: "Coming Up - Cloud Automation Tool",
+      description:
+        "CLI tool to automate cloud resource provisioning across AWS & GCP.",
+      tech: ["Python", "Bash", "Docker", "GCP/AWS SDK"],
+      link: "",
+    },
+    {
+      title: "Portfolio Website",
+      description:
+        "Personal portfolio built with Next.js, Tailwind, and Framer Motion.",
+      tech: ["Next.js", "React", "Tailwind"],
+      link: "https://github.com/karanir2005/portfolio",
+    },
+    // add more...
   ];
 
   return (
-    <section
-      id="projects"
-      className={`py-20 px-6 transition-colors duration-500
+    <main
+      className={`py-20 px-6 min-h-screen transition-colors duration-500
         ${theme === "dark" ? "bg-gray-900 text-gray-200" : "bg-white text-gray-800"}`}
     >
-      <motion.h2
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className={`text-3xl font-bold text-center mb-10 
-          ${theme === "dark" ? "text-cyan-400" : "text-cyan-600"}`}
-      >
-        Featured Projects
-      </motion.h2>
+      <h1 className="text-4xl font-bold text-center text-cyan-600 dark:text-cyan-400">
+        All Projects
+      </h1>
 
       <div className="grid md:grid-cols-3 gap-8 mt-10 max-w-6xl mx-auto">
-        {highlightProjects.map((p, i) => (
+        {allProjects.map((p, i) => (
           <ProjectCard key={i} {...p} />
         ))}
       </div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        viewport={{ once: true }}
-        className="mt-12 text-center"
-      >
-        <Link
-          href="/projects"
-          className="bg-cyan-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-cyan-600 transition-colors"
-        >
-          View All Projects
-        </Link>
-      </motion.div>
-    </section>
+    </main>
   );
 }
