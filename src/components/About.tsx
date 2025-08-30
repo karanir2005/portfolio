@@ -52,7 +52,7 @@ export default function About() {
             My long-term goal is to grow into a role at a <span className="font-semibold text-cyan-400">MAANG+</span> company, where I can build innovative and secure technologies at scale.
           </p>
           <p className="text-lg leading-relaxed">
-            Outside of tech, I enjoy exploring new hobbies, running marathons, learning about finance & investing, and sharing ideas that push me to grow.
+            Outside of tech, I enjoy exploring new hobbies, <span className="font-semibold text-cyan-400">running marathons</span>, learning about <span className="font-semibold text-cyan-400">finance & investing</span>, and sharing ideas that push me to grow.
           </p>
         </motion.div>
       </div>
