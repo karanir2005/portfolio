@@ -45,11 +45,11 @@ export default function About() {
             Hi, I&apos;m Rushil 👋 an aspiring <span className="font-semibold text-cyan-400">Software Engineer </span> 
             with a strong interest in <span className="font-semibold text-cyan-400">AI/ML</span>, 
             <span className="font-semibold text-cyan-400"> Cybersecurity</span>, and 
-            <span className="font-semibold text-cyan-400"> Cloud Technologies</span>.  
+            <span className="font-semibold text-cyan-400"> Full Stack</span> development.  
           </p>
           <p className="text-lg leading-relaxed mb-4">
-            I&apos;m currently pursuing my degree in Software Engineering @ <span className="font-semibold text-cyan-400">McMaster University </span>, and aiming to secure a software engineering internship for Winter 2026. 
-            My long-term goal is to grow into a role at a <span className="font-semibold text-cyan-400">MAANG+</span> company, where I can build innovative and secure technologies at scale.
+            I&apos;m a <span className="font-semibold text-cyan-400">Software Developer</span> Co-op @ <span className="font-semibold text-cyan-400">Bell Canada</span>, and pursuing Software Engineering @ <span className="font-semibold text-cyan-400">McMaster University</span>. 
+            My long-term goal is to grow into a SWE role at a <span className="font-semibold text-cyan-400">MAANG+</span> company, where I can build innovative and secure technologies at large scale.
           </p>
           <p className="text-lg leading-relaxed">
             Outside of tech, I enjoy exploring new hobbies, <span className="font-semibold text-cyan-400">running</span>, learning about <span className="font-semibold text-cyan-400">finance & investing</span>, and sharing ideas that push me to grow.

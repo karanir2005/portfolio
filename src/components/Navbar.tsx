@@ -42,6 +42,11 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
+              <Link href="/#experience" className="hover:text-cyan-400 transition-colors duration-300">
+                Experience
+              </Link>
+            </li>
+            <li>
               <Link href="/#skills" className="hover:text-cyan-400 transition-colors duration-300">
                 Skills
               </Link>

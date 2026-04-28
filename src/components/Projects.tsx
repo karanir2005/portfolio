@@ -3,33 +3,12 @@ import ProjectCard from "./ProjectCard";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useTheme } from "@/context/ThemeProvider";
+import { allProjects } from "@/data/projects";
 
 export default function Projects() {
   const { theme } = useTheme();
 
-  const highlightProjects = [
-    {
-      title: "HealthConnect",
-      description:
-        "A healthcare app designed to reduce clinic wait times by 20%. Features a chatbot powered by Cohere API with context-aware responses.",
-      tech: ["React", "Node.js", "Cohere API", "MongoDB"],
-      link: "https://devpost.com/software/health-connect-0z8v4s?ref_content=my-projects-tab&ref_feature=my_projects",
-    },
-    {
-      title: "EquiHire",
-      description:
-        "AI resume screening tool, designed to reduce bias during hiring by 30%. Uses Cloud Vision API to match candidates to job descriptions.",
-      tech: ["Pyhton", "JavaScript", "React", "SQL", "Java"],
-      link: "https://devpost.com/software/equihire-m486b7",
-    },
-    {
-      title: "MatrixMate",
-      description:
-        "Terminal app built using C, to performing 6+ complex matrix operations. Highly memory efficient compared to other apps, making it useful for large data sets.",
-      tech: ["C", "Bash", "Git", "Terminal"],
-      link: "https://github.com/Sam-Scott-McMaster/the-team-assignment-team-33-press-alt-f4",
-    },
-  ];
+  const highlightProjects = allProjects.slice(0, 3);
 
   return (
     <section

@@ -14,7 +14,7 @@ export default function Hero() {
       ? "text-cyan-300 font-semibold"
       : "text-cyan-500 font-semibold";
 
-  const phrases = ["Artificial Intelligence", "Cybersecurity", "Cloud Computing"];
+  const phrases = ["Artificial Intelligence", "Cybersecurity", "Full Stack Development"];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -52,7 +52,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
-          Aspiring <span className={highlightClass}>Software Engineer</span>
+        <span className={highlightClass}>Software Developer</span> Co-op @ <span className="font-semibold text-cyan-400"></span>Bell Canada
         </motion.p>
 
         <motion.p

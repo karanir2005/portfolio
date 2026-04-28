@@ -8,48 +8,39 @@ import {
   SiCplusplus,
   SiMysql,
   SiMongodb,
-  SiOracle,
-  SiSnowflake,
   SiReact,
   SiNodedotjs,
   SiExpress,
-  SiTailwindcss,
-  SiHtml5,
-  SiCss3,
-  SiGit,
+  SiGithub,
   SiLinux,
-  SiPandas,
-  SiNumpy,
+  SiSpringboot,
+  SiGooglecloud,
+  SiSwagger,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { useTheme } from "@/context/ThemeProvider";
 
 const categories = {
   Languages: [
+    { name: "Java", icon: <FaJava className="text-red-500" /> },
+    { name: "Python", icon: <SiPython className="text-blue-400" /> },
     { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
     { name: "TypeScript", icon: <SiTypescript className="text-blue-500" /> },
-    { name: "Python", icon: <SiPython className="text-blue-400" /> },
-    { name: "Java", icon: <FaJava className="text-red-500" /> },
     { name: "C/C++", icon: <SiCplusplus className="text-blue-600" /> },
-    { name: "SQL", icon: <SiMysql className="text-teal-500" /> },
+    { name: "SQL", icon: <SiMysql className="text-teal-500" /> },  
   ],
   Frameworks: [
+    { name: "Spring Boot", icon: <SiSpringboot className="text-green-500" /> },
     { name: "React", icon: <SiReact className="text-cyan-400" /> },
     { name: "Node.js", icon: <SiNodedotjs className="text-green-500" /> },
     { name: "Express", icon: <SiExpress className="text-gray-500" /> },
-    { name: "TailwindCSS", icon: <SiTailwindcss className="text-sky-400" /> },
-    { name: "HTML", icon: <SiHtml5 className="text-orange-500" /> },
-    { name: "CSS", icon: <SiCss3 className="text-blue-500" /> },
-    { name: "Pandas", icon: <SiPandas className="text-violet-500" /> },
-    { name: "NumPy", icon: <SiNumpy className="text-blue-400" /> },
   ],
-  Tools: [
-    { name: "Git", icon: <SiGit className="text-red-600" /> },
-    { name: "Linux", icon: <SiLinux className="text-black dark:text-cyan-500" /> },
-    { name: "Oracle", icon: <SiOracle className="text-red-500" /> },
-    { name: "MySQL", icon: <SiMysql className="text-blue-500" /> },
+  "Tools & Platforms": [
+    { name: "Git/GitHub", icon: <SiGithub className="text-black dark:text-white" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-green-600" /> },
-    { name: "Snowflake", icon: <SiSnowflake className="text-cyan-500" /> },
+    { name: "Linux/Bash", icon: <SiLinux className="text-black dark:text-cyan-500" /> },
+    { name: "Google Cloud Vision", icon: <SiGooglecloud className="text-blue-500" /> },
+    { name: "REST APIs", icon: <SiSwagger className="text-green-500" /> },
   ],
 };
 
@@ -96,7 +87,7 @@ export default function TechStack() {
                   >
                     <div className="text-4xl mb-2">{item.icon}</div>
                     <p
-                      className={`text-sm 
+                      className={`text-sm text-center 
                         ${theme === "dark" ? "text-gray-300" : "text-gray-700"}`}
                     >
                       {item.name}
