@@ -9,17 +9,24 @@ export default function Experience() {
 
   const experiences = [
     {
+      title: "Full-Stack Developer (Incoming) — RBC",
+      description:
+        "Incoming Full-Stack Developer co-op on the marketing technology team at RBC.",
+      tech: ["React", "TypeScript", "Node.js"],
+      period: "Sep 2026 — Present",
+    },
+    {
       title: "Software Developer — Bell",
       description:
-        " Summer 2026 Software Developer co-op on the Enterprise Architecture team.",
-      tech: ["React", "Node.js", "Java", "Docker"],
+        "Architected a full-stack Next.js/TypeScript app for managing IVR broadcast messages, cutting update turnaround to under 60s and processing 35,000 lines (8MB) in under 20 seconds via a bulk CSV pipeline. Minimized Azure Cosmos DB load with an in-memory cache and secured external APIs with SHA-256-hashed, rate-limited keys. Deployed to Azure Container Apps with auto-scaling and zero-downtime releases. Built IRIS, an LLM-powered intern onboarding tool that won 2nd place at Bell's intern hackathon.",
+      tech: ["Next.js", "TypeScript", "Azure", "Cosmos DB", "Docker"],
       period: "May — Aug 2026",
     },
     {
       title: "Automation Analyst — RBC",
       description:
-        "Built a Python automation system to validate PDF reports, reducing manual effort by 96%. Automated API health checks using Playwright. Performed regression testing and maintained CI/CD pipelines.",
-      tech: ["Python", "Playwright", "Selenium", "CI/CD", "SQL"],
+        "Built a Python/React tool to automate PDF report validation, reducing manual verification time by 96% and improving throughput 10x with parallel processing and caching. Developed an automated health-check system scanning 22 endpoints daily with Slack alerts, detecting 6 critical issues. Validated a regression suite via GitHub Actions CI, catching 3 critical defects before production.",
+      tech: ["Python", "React", "GitHub Actions", "CI/CD", "SQL"],
       period: "Jan — Apr 2026",
     },
   ];
@@ -41,7 +48,7 @@ export default function Experience() {
         Experience
       </motion.h2>
 
-      <div className="grid md:grid-cols-2 gap-8 mt-10 max-w-6xl mx-auto">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 max-w-6xl mx-auto">
         {experiences.map((e, i) => (
           <ExperienceCard
             key={i}

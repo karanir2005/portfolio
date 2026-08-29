@@ -47,13 +47,13 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="/#skills" className="hover:text-cyan-400 transition-colors duration-300">
-                Skills
+              <Link href="/#projects" className="hover:text-cyan-400 transition-colors duration-300">
+                Projects
               </Link>
             </li>
             <li>
-              <Link href="/#projects" className="hover:text-cyan-400 transition-colors duration-300">
-                Projects
+              <Link href="/#skills" className="hover:text-cyan-400 transition-colors duration-300">
+                Skills
               </Link>
             </li>
             <li>
