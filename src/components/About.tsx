@@ -11,7 +11,7 @@ export default function About() {
     <section
       id="about"
       className={`w-full py-20 px-6 md:px-12 lg:px-20 transition-colors duration-500 
-        ${theme === "dark" ? "bg-gray-900 text-gray-200" : "bg-white text-gray-800"}`}
+        ${theme === "dark" ? "bg-gray-900 text-gray-200" : "bg-stone-50 text-gray-800"}`}
     >
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
         

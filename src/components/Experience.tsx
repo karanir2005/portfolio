@@ -35,7 +35,7 @@ export default function Experience() {
     <section
       id="experience"
       className={`py-20 px-6 transition-colors duration-500
-        ${theme === "dark" ? "bg-gray-900 text-gray-200" : "bg-white text-gray-800"}`}
+        ${theme === "dark" ? "bg-gray-900 text-gray-200" : "bg-stone-50 text-gray-800"}`}
     >
       <motion.h2
         initial={{ opacity: 0, y: 30 }}

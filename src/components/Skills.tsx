@@ -51,7 +51,7 @@ export default function TechStack() {
     <section
       id="skills"
       className={`w-full py-20 px-6 md:px-12 lg:px-20 transition-colors duration-500 
-        ${theme === "dark" ? "bg-gray-900 text-gray-200" : "bg-white text-gray-800"}`}
+        ${theme === "dark" ? "bg-gray-900 text-gray-200" : "bg-stone-50 text-gray-800"}`}
     >
       <div className="max-w-6xl mx-auto">
         {/* Title */}
@@ -69,7 +69,7 @@ export default function TechStack() {
               transition={{ duration: 0.5 }}
               whileHover={{ scale: 1.03 }}
               className={`p-6 rounded-2xl shadow-lg transition-colors duration-500 
-                ${theme === "dark" ? "bg-gray-800" : "bg-gray-50"}`}
+                ${theme === "dark" ? "bg-gray-800" : "bg-white"}`}
             >
               <h3
                 className={`text-xl font-semibold mb-6 

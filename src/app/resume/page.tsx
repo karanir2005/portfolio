@@ -11,7 +11,7 @@ export default function ResumePage() {
   return (
     <main
       className={`min-h-screen pt-24 px-6 pb-12 transition-colors duration-500 
-        ${theme === "dark" ? "bg-gray-900 text-gray-200" : "bg-white text-gray-900"}`}
+        ${theme === "dark" ? "bg-gray-900 text-gray-200" : "bg-stone-50 text-gray-900"}`}
     >
       <div className="max-w-6xl mx-auto flex flex-col items-center gap-6">
         <h1 className={`text-4xl font-bold ${theme === "dark" ? "text-cyan-400" : "text-cyan-600"}`}>

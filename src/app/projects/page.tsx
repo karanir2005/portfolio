@@ -10,7 +10,7 @@ export default function ProjectsPage() {
   return (
     <main
       className={`py-20 px-6 min-h-screen transition-colors duration-500
-        ${theme === "dark" ? "bg-gray-900 text-gray-200" : "bg-white text-gray-800"}`}
+        ${theme === "dark" ? "bg-gray-900 text-gray-200" : "bg-stone-50 text-gray-800"}`}
     >
       <h1 className="text-4xl font-bold text-center text-cyan-600 dark:text-cyan-400">
         All Projects
