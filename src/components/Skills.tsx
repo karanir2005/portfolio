@@ -8,6 +8,7 @@ import {
   SiCplusplus,
   SiMysql,
   SiMongodb,
+  SiRedis,
   SiReact,
   SiNodedotjs,
   SiExpress,
@@ -16,6 +17,7 @@ import {
   SiSpringboot,
   SiGooglecloud,
   SiSwagger,
+  SiDocker,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { useTheme } from "@/context/ThemeProvider";
@@ -38,6 +40,8 @@ const categories = {
   "Tools & Platforms": [
     { name: "Git/GitHub", icon: <SiGithub className="text-black dark:text-white" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-green-600" /> },
+    { name: "Redis", icon: <SiRedis className="text-red-600" /> },
+    { name: "Docker", icon: <SiDocker className="text-blue-500" /> },
     { name: "Linux/Bash", icon: <SiLinux className="text-black dark:text-cyan-500" /> },
     { name: "Google Cloud Vision", icon: <SiGooglecloud className="text-blue-500" /> },
     { name: "REST APIs", icon: <SiSwagger className="text-green-500" /> },

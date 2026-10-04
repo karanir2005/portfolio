@@ -48,7 +48,7 @@ export default function About() {
             <span className="font-semibold text-cyan-400"> Full Stack</span> development.  
           </p>
           <p className="text-lg leading-relaxed mb-4">
-            I&apos;m a <span className="font-semibold text-cyan-400">Software Developer</span> Co-op @ <span className="font-semibold text-cyan-400">Bell Canada</span>, and pursuing Software Engineering @ <span className="font-semibold text-cyan-400">McMaster University</span>. 
+            I&apos;m a <span className="font-semibold text-cyan-400">Full-Stack Developer</span> Co-op @ <span className="font-semibold text-cyan-400">RBC</span>, and pursuing Software Engineering @ <span className="font-semibold text-cyan-400">McMaster University</span>. 
             My long-term goal is to grow into a SWE role at a <span className="font-semibold text-cyan-400">MAANG+</span> company, where I can build innovative and secure technologies at large scale.
           </p>
           <p className="text-lg leading-relaxed">

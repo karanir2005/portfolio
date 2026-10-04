@@ -9,10 +9,10 @@ export default function Experience() {
 
   const experiences = [
     {
-      title: "Full-Stack Developer (Incoming) — RBC",
+      title: "Full-Stack Developer — RBC",
       description:
-        "Incoming Full-Stack Developer co-op on the marketing technology team at RBC.",
-      tech: ["React", "TypeScript", "Node.js"],
+        "Fixed 4 XSS vulnerabilities with HTML encoding, added CSRF protection and restricted critical API endpoints with role-based access, shipping fixes to production via CI/CD. Resolved 5 dependency and workflow issues from a Spring Boot 4 upgrade, fixed 2 UI bugs, and migrated the homepage from HTML/CSS to React.",
+      tech: ["Java", "Spring Boot", "React", "JavaScript"],
       period: "Sep 2026 — Present",
     },
     {

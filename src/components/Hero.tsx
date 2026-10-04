@@ -52,7 +52,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
-        <span className={highlightClass}>Software Developer</span> Co-op @ <span className="font-semibold text-cyan-400"></span>Bell Canada
+        <span className={highlightClass}>Full-Stack Developer</span> Co-op @ <span className="font-semibold text-cyan-400"></span>RBC
         </motion.p>
 
         <motion.p
